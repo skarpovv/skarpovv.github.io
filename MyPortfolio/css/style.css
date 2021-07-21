@@ -1,0 +1,515 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+image {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  width: 1920px;
+}
+
+nav {
+  height: 60px;
+  background-color: #344051;
+}
+nav .name {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 60px;
+  font-size: 20px;
+  color: #fff;
+  margin-left: 368px;
+  float: left;
+  margin-right: 426px;
+}
+nav .menu li {
+  float: left;
+  line-height: 60px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0px 20px;
+  font-size: 16px;
+}
+
+.main {
+  width: 1920px;
+  height: 920px;
+  background: url("../img/Andrew.png") 87% 100%/41% no-repeat, url("../img/fon_115.jpg") center/cover no-repeat;
+}
+.main .title {
+  float: left;
+  margin-top: 320px;
+  margin-left: 350px;
+  text-align: center;
+}
+.main .title h1 {
+  font-size: 75px;
+  font-weight: bold;
+  color: #2c384a;
+  margin-bottom: 30px;
+}
+.main .title h4 {
+  color: #79818d;
+  font-size: 20px;
+  margin-bottom: 45px;
+}
+.main .title input {
+  margin: 0px 15px;
+  border: 2px solid #6f7884;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 19px;
+  color: #6f7884;
+  padding: 10px 15px;
+}
+
+.about {
+  height: 650px;
+  background-color: #fff;
+  text-align: center;
+}
+.about h2 {
+  padding-bottom: 20px;
+  margin-top: 100px;
+  font-size: 34px;
+  background: url("../img/orange_line.jpg") center 50px no-repeat;
+  margin-bottom: 55px;
+}
+.about .about_text {
+  width: 900px;
+  font-size: 17px;
+  margin: 0 auto;
+  color: #4d5665;
+  text-align: left;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.about .about_button {
+  margin: 30px 0px 0px 0px;
+  border: 2px solid #6f7884;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 19px;
+  color: #6f7884;
+  padding: 7px 20px;
+  background: url("../img/download_icon.png") 6px 50%/10.5% no-repeat;
+  padding-left: 30px;
+}
+
+.skills {
+  height: 522px;
+  background: url("../img/about_background.jpg") center center no-repeat;
+}
+.skills .title {
+  font-size: 34px;
+  background: url("../img/orange_line.jpg") center 95% no-repeat;
+  text-align: center;
+  padding: 100px 0 40px 0;
+}
+.skills .skillsbar div:first-child {
+  margin-left: 420px;
+}
+.skills .skillsbar div {
+  width: 212px;
+  float: left;
+  margin: 100px 75px 100px 0px;
+  text-align: center;
+  padding-top: 70px;
+}
+.skills .skillsbar div h4 {
+  font-size: 19px;
+  color: #cf7600;
+  margin-bottom: 15px;
+}
+.skills .skillsbar div p {
+  color: #3f495a;
+  line-height: 1.2;
+}
+.skills .skillsbar .web {
+  background: url(../img/web_skills.png) center 0 no-repeat;
+}
+.skills .skillsbar .dev {
+  background: url(../img/dev_skills.png) center 0 no-repeat;
+}
+.skills .skillsbar .ceo {
+  background: url(../img/ceo_skills.png) center 0 no-repeat;
+}
+.skills .skillsbar .mark {
+  background: url(../img/mark_skills.png) center 0 no-repeat;
+}
+
+.cases {
+  height: 1070px;
+}
+.cases .container {
+  width: 1170px;
+  margin: 0 auto;
+}
+.cases .title {
+  font-size: 34px;
+  background: url("../img/orange_line.jpg") center 95% no-repeat;
+  text-align: center;
+  padding: 100px 0 40px 0;
+}
+.cases .podzagl {
+  text-align: center;
+  font-size: 16px;
+  color: #3f495a;
+  width: 880px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.cases .cases_image {
+  margin-top: 36px;
+  margin-bottom: 30px;
+}
+.cases .about_cases {
+  text-align: left;
+}
+.cases .about_cases .client_website {
+  float: left;
+}
+.cases .about_cases .client_website h3 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #384354;
+  line-height: 50px;
+}
+.cases .about_cases .client_website p, .cases .about_cases .client_website a {
+  color: #3f495a;
+  font-size: 16px;
+}
+.cases .about_cases .client_website .visit_button {
+  width: 200px;
+  line-height: 45px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  background: #63b5ae;
+  border-radius: 9px;
+}
+.cases .about_cases .name_about {
+  margin-left: 300px;
+  width: 855px;
+}
+.cases .about_cases .name_about h4 {
+  font-size: 25px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #384354;
+  margin-bottom: 7px;
+}
+.cases .about_cases .name_about p {
+  font-size: 20px;
+  line-height: 1.2;
+  color: #3f495a;
+}
+
+.cost {
+  height: 950px;
+}
+.cost .container_cost {
+  width: 960px;
+  height: 680px;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+.cost .container_cost .title {
+  font-size: 45px;
+  font-weight: 500;
+  color: #1c2534;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 40px;
+}
+.cost .container_cost .calcul {
+  margin: 0 35px;
+}
+.cost .container_cost .calcul .line {
+  border-top: 3px solid #d1d1d1;
+  margin-bottom: 10px;
+}
+.cost .container_cost .calcul .calc-menu {
+  font-size: 30px;
+  font-weight: 500;
+  color: #1c2534;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.cost .container_cost .calcul .select-menu {
+  width: 891px;
+  height: 57px;
+  margin-bottom: 43px;
+  background-color: #eeeeee;
+  padding-left: 25px;
+  font-size: 20px;
+  color: #737373;
+  border-radius: 5px;
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) 98% center no-repeat, #eeeeee;
+  -webkit-appearance: none;
+}
+.cost .container_cost .calcul .select-menu-last {
+  margin-bottom: 35px;
+}
+.cost .container_cost .calcul .result {
+  font-size: 20px;
+  font-weight: 1000;
+  color: #1c2534;
+  line-height: 26px;
+  float: left;
+}
+.cost .container_cost .calcul .ans {
+  font-size: 20px;
+  font-weight: 1000;
+  color: #1c2534;
+  line-height: 26px;
+  text-align: right;
+}
+
+.statistic {
+  height: 499px;
+  background: url("../img/background_stats.jpg") no-repeat;
+}
+.statistic .stat_block div:first-child {
+  margin-left: 440px;
+}
+.statistic .title {
+  font-size: 34px;
+  background: url("../img/orange_line.jpg") center 95% no-repeat;
+  text-align: center;
+  padding: 100px 0 40px 0;
+  text-transform: uppercase;
+  letter-spacing: -0.06em;
+  margin-bottom: 20px;
+}
+.statistic .happy_clients {
+  background: url("../img/happy_clients_stats.png") center 23px no-repeat;
+}
+.statistic .hours {
+  background: url("../img/hours_stats.png") center 23px no-repeat;
+}
+.statistic .projects {
+  background: url("../img/projects_stats.png") center 23px no-repeat;
+}
+.statistic .awards {
+  background: url("../img/awards_stats.png") center 23px no-repeat;
+}
+.statistic .info_block {
+  width: 193px;
+  height: 206px;
+  float: left;
+  margin-right: 90px;
+}
+.statistic .info_block h3 {
+  margin-top: 100px;
+  font-size: 37.5px;
+  line-height: 20px;
+  color: #323e4f;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.statistic .info_block p {
+  font-size: 16.7px;
+  font-weight: 500;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #323e4f;
+}
+
+.comments {
+  border: 1px solid #fff;
+  height: 590px;
+}
+.comments .container_comments {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 690px;
+  height: 396px;
+}
+.comments .container_comments .title {
+  font-size: 34px;
+  background: url("../img/orange_line.jpg") center 95% no-repeat;
+  text-align: center;
+  padding: 0px 0 40px 0;
+  letter-spacing: -0.06em;
+  margin-bottom: 20px;
+}
+.comments .container_comments .img_comments {
+  width: 101px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  margin-top: 40px;
+}
+.comments .container_comments p {
+  font-size: 16.7px;
+  letter-spacing: -0.06em;
+  color: #5a6371;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.comments .container_comments p span {
+  font-weight: 700;
+  color: #5a6371;
+}
+.comments .container_comments .dot {
+  height: 10px;
+  background: url("../img/dot_active.png") 46% no-repeat, url("../img/dot.png") 50% no-repeat, url("../img/dot.png") 54% no-repeat;
+  margin-top: 50px;
+}
+
+footer {
+  height: 810px;
+  padding-top: 100px;
+  background: url("../img/background_contacts.jpg") no-repeat;
+  color: #fff;
+}
+footer .f_content {
+  margin: 0 auto;
+  width: 740px;
+  height: 560px;
+}
+footer .f_content .title {
+  font-size: 34px;
+  background: url("../img/orange_line.jpg") center 95% no-repeat;
+  text-align: center;
+  padding: 0px 0 40px 0;
+  letter-spacing: -0.06em;
+  margin-bottom: 20px;
+}
+footer .f_content .contacts_text {
+  font-size: 16.7px;
+  letter-spacing: -0.06em;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+footer .f_content .adr {
+  background: url("../img/contacts_adr.png") center 0 no-repeat;
+}
+footer .f_content .email {
+  background: url("../img/contacts_email.png") center 0 no-repeat;
+}
+footer .f_content .tel {
+  background: url("../img/contacts_tel.png") center 0 no-repeat;
+}
+footer .f_content .adr_item {
+  width: 180px;
+  height: 105px;
+  float: left;
+  margin-left: 50px;
+  text-align: center;
+  padding-top: 40px;
+}
+footer .f_content .message .message_text {
+  font-size: 20px;
+  letter-spacing: -0.06em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+footer .f_content .message .first_input {
+  margin-right: 30px;
+}
+footer .f_content .message .text_input {
+  width: 352px;
+  height: 34px;
+  background-color: #d3d6dc;
+  font-size: 16.7px;
+  font-weight: 500;
+  color: #5d5d5e;
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+footer .f_content .message textarea {
+  width: 732px;
+  height: 94px;
+  background-color: #d3d6dc;
+  padding-left: 10px;
+  font-size: 16.7px;
+  font-weight: 500;
+  color: #5d5d5e;
+  resize: none;
+  padding-top: 5px;
+  margin-bottom: 25px;
+}
+footer .f_content .message .contacts_button {
+  width: 125px;
+  height: 46px;
+  border: 0.5px solid #f9faff;
+  border-radius: 5px;
+  background: none;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.06em;
+  color: #ffffff;
+  margin: 0 auto;
+  display: block;
+}
