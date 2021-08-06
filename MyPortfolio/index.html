@@ -4,70 +4,169 @@
 	<head>
 		<title>MyPortfolio</title>
 		<meta http-equiv="Content-type" content="text/html" charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 		</style>
 	</head>
 	<body>
 		<header>
-			<nav>
-				<div class="name">Сергей Карпов</div>
-				<div class="menu">
-					<ul>
-						<li><a href="#">Обо мне</a></li>
-						<li><a href="#">Услуги</a></li>
-						<li><a href="#">Кейсы</a></li>
-						<li><a href="#">Прайс</a></li>
-						<li><a href="#">Отзывы</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
+			<div class="container">
+				<div class="row">
+					<div class="col-xxl-2 col-lg-3 col-7">
+						<div class="logo">Сергей Карпов</div>
+					</div>
+					<div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
+						<div class="menu">
+							<ul>
+								<li><a href="#">Обо мне</a></li>
+								<li><a href="#">Услуги</a></li>
+								<li><a href="#">Кейсы</a></li>
+								<li><a href="#">Прайс</a></li>
+								<li><a href="#">Отзывы</a></li>
+								<li><a href="#">Контакты</a></li>
+						</ul>
+						</div>
+					</div>
+						<div class="col-5 d-lg-none d-flex justify-content-center align-items-end flex-column">
+							<div class="dropdown">
+							  <a class="btn btn-menu btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+							    Меню
+							  </a>
+
+							  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							    <li><a class="dropdown-item" href="#">Обо мне</a></li>
+								<li><a class="dropdown-item" href="#">Услуги</a></li>
+								<li><a class="dropdown-item" href="#">Кейсы</a></li>
+								<li><a class="dropdown-item" href="#">Прайс</a></li>
+								<li><a class="dropdown-item" href="#">Отзывы</a></li>
+								<li><a class="dropdown-item" href="#">Контакты</a></li>
+							  </ul>
+							</div>
+						</div>	
 				</div>
-			</nav>
+			</div>
 		</header>
 		<main>
 			<section class="main">
-				<div class="title">
-					<h1>Привет<br>Я Сергей Карпов</h1>
-					<h4>Фронт-енд разработчик</h4>
-					<input type="submit" value="Обо мне">
-					<input type="submit" value="Мои работы"> 
+				<div class="container h-100">
+					<div class="row h-100 align-items-center">
+						<div class="col-lg-6 mt-5 pt-5">
+							<div class="title mt-5 pt-5">
+							<h1>Привет<br>Я Сергей Карпов</h1>
+							<h4>Фронт-енд разработчик</h4>
+							<input type="submit" value="Обо мне">
+							<input type="submit" value="Мои работы">
+							</div>
+						</div>
+					</div>
 				</div>
+				
 				<br>
 			</section>
 
 			<section class="about">
-				<h2>ОБО МНЕ</h2>
-				<img src="img/round_photo.png" alt="">
-				<p class="about_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos error sint ad cum aliquam voluptatibus deleniti, itaque, illo libero aut magnam blanditiis iste quisquam tempore, obcaecati necessitatibus quis, deserunt voluptates.</p>
-			   <p class="about_text">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Necessitatibus iusto sunt ut dolorem a, consectetur adipisci perferendis quae ad deleniti dignissimos repellat sapiente, amet esse repudiandae, inventore, perspiciatis illo. Libero!</p>
-				
-				<input type="submit" value="Скачать резюме" class="about_button">
+				<div class="container">
+
+					<div class="row justify-content-center">
+						<div class="block-title col-lg-4 col-md-6 mt-5 pt-5">
+							<h2>ОБО МНЕ</h2>
+						</div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-lg-4 mt-4">
+							<img src="img/round_photo.png" alt="">
+						</div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-lg-8 mt-4">
+							<p class="about_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos error sint ad cum aliquam voluptatibus deleniti, itaque, illo libero aut magnam blanditiis iste quisquam tempore, obcaecati necessitatibus quis, deserunt voluptates.</p>
+			            <p class="about_text">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Necessitatibus iusto sunt ut dolorem a, consectetur adipisci perferendis quae ad deleniti dignissimos repellat sapiente, amet esse repudiandae, inventore, perspiciatis illo. Libero!</p>
+						</div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-lg-4 mt-4">
+							<input type="submit" value="Скачать резюме" class="about_button">
+						</div>
+					</div>
+
+				</div>
 				<br><br>
 			</section>
 
 			<section class="skills">
-				<div class="title">
-					<h2>ЧТО Я УМЕЮ</h2>
-				</div>
-				<div class="skillsbar">
-					<div class="web">
-						<h4>Веб-дизайн</h4>
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, accusantium? </p>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="block-title col-lg-4 col-md-6 mt-5 pt-5">
+							<h2>ЧТО Я УМЕЮ</h2>
+						</div>
 					</div>
-					<div class="dev">
-						<h4>Разработка</h4>
-						<p>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Voluptatem, corrupti.</p>
+					<div class="row justify-content-around skillsbar pt-5 mt-5 d-none d-lg-flex">
+						<div class="col-3">
+							<div class="web skill-container">
+								<h4>Веб-дизайн</h4>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, accusantium? </p>
+							</div>
+						</div>
+
+						<div class="col-3">
+							<div class="dev skill-container">
+								<h4>Разработка</h4>
+								<p>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Voluptatem, corrupti.</p>
+							</div>
+						</div>
+
+						<div class="col-3">
+							<div class="ceo skill-container">
+								<h4>CEO-Оптимизация</h4>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, iusto? </p>
+							</div>
+						</div>
+
+						<div class="col-3">
+							<div class="mark skill-container">
+								<h4>Маркетинг</h4>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolorem!</p>	
+							</div>
+						</div>
+					</div>	
+						<!-- FIRST ROW -->
+						<div class="row d-lg-none skillsbar mt-5 pt-5">
+							<div class="col-6">
+							<div class="web skill-container">
+								<h4>Веб-дизайн</h4>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, accusantium? </p>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="dev skill-container">
+								<h4>Разработка</h4>
+								<p>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Voluptatem, corrupti.</p>
+							</div>
+						</div>
+						</div>
+						<!-- SECOND ROW -->
+						<div class="row d-lg-none mt-5 skillsbar">
+							<div class="col-6">
+							<div class="ceo skill-container">
+								<h4>CEO-Оптимизация</h4>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, iusto? </p>
+							</div>
+						</div>
+
+						<div class="col-6">
+							<div class="mark skill-container">
+								<h4>Маркетинг</h4>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolorem!</p>	
+							</div>
+						</div>
 					</div>
-					<div class="ceo">
-						<h4>CEO-Оптимизация</h4>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, iusto? </p>
-					</div>
-					<div class="mark">
-						<h4>Маркетинг</h4>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolorem!</p>	
-					</div>
-				</div>
 				<br>
 			</section>
 
@@ -78,7 +177,7 @@
 					</div>
 					<p class="podzagl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</p>
 					<div class="cases_image">
-						<img src="img/cases_260.jpg" alt="(((">	
+							
 					</div>
 					<div class="about_cases">
 						<div class="client_website">
@@ -210,5 +309,6 @@
 		<section class="copyright">
 			<p>Copyright © 2021 Сергей Карпов. Design by Web</p>
 		</section>
+		<script src="js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>

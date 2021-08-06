@@ -1,5 +1,17 @@
 @import "nullstyle.scss";
 
+.block-title
+{
+	h2
+	{
+		font-size: 34px;	
+	}
+	text-align: center;	
+	height: 100px;	
+	padding-bottom: 20px;
+	background: url('../img/orange_line.jpg') center 95px no-repeat;
+}
+
 @keyframes coming
 {
 	from
@@ -33,7 +45,7 @@
 	}	
 	to
 	{
-		margin-left: 350px;
+		margin-left: 0px;
 		opacity: 1;
 	}
 }
@@ -41,94 +53,98 @@
 body
 {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	width: 1920px;
+	width: 100%;
 }
+
+.btn-menu:visited
+{
+	color: #fff;
+}
+
 
 header
 {
-	position: fixed;
+	position: fixed;	
 	height: 60px;
-	background-color: #344051;
+	background-color: #354051;
 	width: 100%;
 	z-index: 20;
 	animation: coming 2s ease;
 }
 
-nav
+.logo
 {
-	.name
-	{
-		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-		line-height: 60px;
-		font-size: 20px;	
-		color: #fff;
-		margin-left:368px;	
-		float: left;
-		margin-right: 426px;
-		animation: coming 0.8s ease; 
-		-webkit-animations: coming 0.8s ease;
-		-o-animations: coming 0.8s ease;
-	}
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	line-height: 60px;
+	font-size: 20px;	
+	color: #fff;
+	animation: coming 0.8s ease; 
+	-webkit-animations: coming 0.8s ease;
+	-o-animations: coming 0.8s ease;
+}
 
-	.menu
+.menu
+{
+	float:left;
+	li
 	{
-		float:left;
-		li
+		a
 		{
-			float:left;
-			line-height: 60px;
-			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-			color: #fff;
-			text-transform: uppercase;
-			margin: 0px 20px;
-			font-size: 16px;
-			opacity: 0;
-			animation: menu-animation 1.2s ease forwards; 
-			-webkit-animations: menu-animation 1.2s ease forwards;
-			-o-animations: menu-animation 1.2s ease forwards;
-			&:nth-child(1)
+			text-decoration: none;
+		}
+		float:left;
+		line-height: 60px;
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 14px;
+		margin-right: 40px;
+		opacity: 0;
+		animation: menu-animation 1.2s ease forwards; 
+		-webkit-animations: menu-animation 1.2s ease forwards;
+		-o-animations: menu-animation 1.2s ease forwards;
+		&:nth-child(1)
+		{
+      	animation-delay: 0.2s;
+		}
+		&:nth-child(2)
+		{
+			animation-delay: 0.4s;
+		}
+		&:nth-child(3)
+		{
+			animation-delay: 0.6s;
+		}
+		&:nth-child(4)
+		{
+			animation-delay: 0.8s;
+		}
+		&:nth-child(5)
+		{
+			animation-delay: 1s;
+		}
+		&:nth-child(6)
+		{
+			animation-delay: 1.2s;
+		}
+		a
+		{
+			display: inline-block;
+			transition: all 0.2s;
+			color: white;
+			transform: scale(1,1);
+			&:active
 			{
-         	animation-delay: 0.2s;
+				color: red;
+				transform: scale(1.1,1.1);
 			}
-			&:nth-child(2)
+			&:visited
 			{
-				animation-delay: 0.4s;
+				color: #fff;
 			}
-			&:nth-child(3)
+			&:hover
 			{
-				animation-delay: 0.6s;
-			}
-			&:nth-child(4)
-			{
-				animation-delay: 0.8s;
-			}
-			&:nth-child(5)
-			{
-				animation-delay: 1s;
-			}
-			&:nth-child(6)
-			{
-				animation-delay: 1.2s;
-			}
-			a
-			{
-				display: inline-block;
-				transition: all 0.2s;
-				color: white;
-				transform: scale(1,1);
-				&:active
-				{
-					color: red;
-					transform: scale(1.1,1.1);
-				}
-				&:visited
-				{
-					color: #fff;
-				}
-				&:hover
-				{
-					color: #d17700;
-				}
+				color: #d17700;
 			}
 		}
 	}
@@ -136,21 +152,20 @@ nav
 
 .main 
 {
-	width: 1920px;
+	width: 100%;
 	height: 980px;
-	background: url('../img/Andrew.png') 87% 100%/41% no-repeat ,url('../img/fon_115.jpg') center/cover no-repeat;
+	background: url('../img/Andrew.png') 87% 100%/700px no-repeat ,url('../img/fon_115.jpg') center/cover no-repeat;
 	animation: coming 2s ease;
 	.title
 	{
-		float:left;
-		margin-top: 380px;
-		margin-left: 350px;
 		text-align: center;
 		animation: title-coming 2s ease;
 		h1
 		{
+
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 			font-size: 75px;
-			font-weight: bold;
+			font-weight: 600;
 			color: #2c384a;
 			margin-bottom: 30px;
 		}
@@ -182,43 +197,74 @@ nav
 			}
 		}
 	}
+	@media (max-width: 992px)
+	{
+		.title h1, .title h4
+		{
+			color: #fff;
+			z-index: 10;
+			position: relative;
+		}
+		.title input
+		{
+			background: none;
+			color: #fff;
+			border: 2px solid #fff;
+			border-radius: 5px;
+			position: relative;
+			z-index: 10;
+		}
+
+		&
+		{
+			position: relative;
+		}
+		&:after
+		{
+			content: "";
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(0, 0, 0, 0.5);
+			position: absolute;
+		}
+	}
 }
 
 .about
 {
-	height: 650px;
+	width: 100%;
+	height: 715px;
 	background-color: #fff;
 	text-align: center;
-	h2
+	.block-title
 	{
+		h2
+		{
+			font-size: 34px;	
+		}
+		height: 100px;	
 		padding-bottom: 20px;
-		margin-top: 100px;
-		font-size: 34px;
-		background: url('../img/orange_line.jpg') center 50px no-repeat;
-		margin-bottom: 55px;
+		background: url('../img/orange_line.jpg') center 95px no-repeat;
 	}
 	.about_text
 	{
-		width: 900px;
 		font-size: 17px;
-		margin: 0 auto;
 		color: #4d5665;
 		text-align: left;
-		padding-bottom: 20px;
-		padding-top: 20px;
-
 	}
 	.about_button
 	{
-		margin: 30px 0px 0px 0px;
+
 		border: 2px solid #6f7884;
 		border-radius: 5px;
 		text-align: center;
 		font-size: 19px;
 		color: #6f7884;
 		padding: 7px 20px;
+		padding-left: 35px;
 		background: url('../img/download_icon.png') 6px 50%/10.5% no-repeat;
-		padding-left: 30px;
 		transition: all 0.3s ease;
 		transform:scale(1.0);
 		&:hover
@@ -231,31 +277,50 @@ nav
 			transform: scale(1.1);
 		}
 	}
+	@media (max-width: 482px) {
+		&
+		{
+			height: 815px;
+		}
+	}
+	@media (max-width: 340px) {
+		&
+		{
+			height: 915px;
+		}
+	}
 }
 
 .skills
 {
+
+	width: 100%;
 	height: 522px;
-	background: url('../img/about_background.jpg') center center no-repeat;
-	.title
+	background: url('../img/about_background.jpg') center center/cover no-repeat;
+	.web
 	{
-		font-size: 34px;
-		background: url('../img/orange_line.jpg') center 95% no-repeat;
-		text-align: center;
-		padding: 100px 0 40px 0;
+		background: url(../img/web_skills.png) center 15% no-repeat;
+	}
+	.dev
+	{
+		background: url(../img/dev_skills.png) center 15% no-repeat;
+	}
+	.ceo
+	{
+		background: url(../img/ceo_skills.png) center 15% no-repeat;
+	}
+	.mark
+	{
+		background: url(../img/mark_skills.png) center 15% no-repeat;
 	}
 	.skillsbar
 	{	
-		div:first-child
-		{
-			margin-left: 420px;
-		}
-		div
+		.skill-container
 		{
 			height: 212px;
-			width: 212px;
-			float: left;
-			margin: 45px 75px 100px 0px;
+			//width: 12.5%;
+			//float: left;
+			//margin: 45px 75px 100px 0px;
 			text-align: center;
 			padding-top: 90px;
 			border: 3px solid rgba(0, 0, 0, 0);
@@ -278,31 +343,28 @@ nav
 				line-height: 1.2;
 			}
 		}
-		.web
+	}
+	@media (max-width: 992px) {
+		&
 		{
-			background: url(../img/web_skills.png) center 15% no-repeat;
+			height: 800px;
 		}
-		.dev
-		{
-			background: url(../img/dev_skills.png) center 15% no-repeat;
-		}
-		.ceo
-		{
-			background: url(../img/ceo_skills.png) center 15% no-repeat;
-		}
-		.mark
-		{
-			background: url(../img/mark_skills.png) center 15% no-repeat;
-		}
+	}
+}
+@media (max-width: 410px) {
+	.skills .skillsbar .skill-container:hover
+	{
+		border-radius: 10px;
 	}
 }
 
 .cases
 {
+	width: 100%;
 	height: 1070px;
 	.container
 	{
-		width: 1170px;
+		width: 100%;
 		margin: 0 auto;
 	}
 	.title
@@ -317,13 +379,15 @@ nav
 		text-align: center;
 		font-size: 16px;
 		color: #3f495a;
-		width: 880px;
+		width: 70%;
 		margin: 0 auto;
 		margin-top: 30px;
 	}
 
 	.cases_image
 	{
+		background: url('../img/cases_260.jpg');
+		width: 50%;
 		margin-top: 36px;
 		margin-bottom: 30px;
 	}
@@ -378,7 +442,7 @@ nav
 		{
 			
 			margin-left: 300px;
-			width: 855px;
+			width: 60%;
 			h4
 			{
 				font-size: 25px;
@@ -399,6 +463,7 @@ nav
 
 .cost
 {
+	width: 100%;
 	height: 950px;	
 	.container_cost
 	{
@@ -476,6 +541,8 @@ nav
 
 .statistic
 {
+	width: 100%;
+	height: 499px;
 	background: url('../img/background_stats.jpg') no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -488,7 +555,7 @@ nav
 		}
 		
 	}
-	height: 499px;
+	
 	
 	.title
 	{
@@ -553,6 +620,7 @@ nav
 
 .comments
 {
+	width: 100%;
 	border: 1px solid #fff;
 	height: 590px;
 	.container_comments
@@ -601,9 +669,10 @@ nav
 
 footer
 {
+	width: 100%;
 	height: 810px;
 	padding-top: 100px;
-	background: url('../img/background_contacts.jpg') no-repeat;
+	background: url('../img/background_contacts.jpg') center center/cover no-repeat;
 	color: #fff;
 	.f_content
 	{
@@ -727,6 +796,7 @@ footer
 
 .copyright
 {
+	width: 100%;
 	height: 92px;
 	background: #354051;
 	outline: 3px solid #354051;
@@ -739,3 +809,5 @@ footer
 		color: #fff;
 	}
 }
+
+
