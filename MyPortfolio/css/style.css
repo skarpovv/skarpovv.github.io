@@ -694,6 +694,17 @@ footer .contacts-block {
   width: 70%;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  footer .contacts-block {
+    width: 100%;
+  }
+}
+@media (max-width: 348px) {
+  footer .contacts-block {
+    width: 100%;
+    font-size: 11px;
+  }
+}
 footer textarea {
   width: 100%;
   height: 94px;
@@ -760,6 +771,21 @@ footer .f_content .message .message_text {
 }
 footer .f_content .message .first_input {
   margin-right: 30px;
+}
+@media (max-width: 767px) {
+  footer {
+    height: 900px;
+  }
+}
+@media (max-width: 576px) {
+  footer {
+    height: 950px;
+  }
+}
+@media (max-width: 348px) {
+  footer {
+    height: 980px;
+  }
 }
 
 .copyright {

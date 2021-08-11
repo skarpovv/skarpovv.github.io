@@ -696,6 +696,19 @@ footer
 	{
 		width: 70%;
 		margin: 0 auto;
+		@media (max-width: 768px) {
+			&
+			{
+				width: 100%;
+			}
+		}
+		@media (max-width: 348px) {
+			&
+			{
+				width: 100%;
+				font-size: 11px;
+			}
+		}
 	}
 	textarea
 	{
@@ -771,6 +784,24 @@ footer
 			
 			
 			
+		}
+	}
+	@media(max-width: 767px) {
+		&
+		{
+			height: 900px;
+		}
+	}
+	@media(max-width: 576px) {
+		&
+		{
+			height: 950px;
+		}
+	}
+	@media(max-width: 348px) {
+		&
+		{
+			height: 980px;
 		}
 	}
 }
