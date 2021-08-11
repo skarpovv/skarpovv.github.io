@@ -172,139 +172,338 @@
 
 			<section class="cases">
 				<div class="container">
-					<div class="title">
-						<h2>КЕЙСЫ</h2>
+
+					<div class="row justify-content-center">
+						<div class="block-title col-lg-4 col-md-6 mt-5 pt-5">
+							<h2>КЕЙСЫ</h2>
+						</div>
 					</div>
-					<p class="podzagl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</p>
-					<div class="cases_image">
-							
+
+					<div class="row justify-content-center">
+						<div class="col-8 mt-4">
+							<p class="podzagl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</p>
+						</div>
 					</div>
-					<div class="about_cases">
-						<div class="client_website">
-							<h3>CLIENT:</h3>
-							<p>Some Company</p>
-							<h3>WEBSITE:</h3>
-							<a>http://www.somesite.com</a><br>
+					
+					<div class="row justify-content-center">
+						<div class="col-12 mt-4">
+							<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+							  	<div class="carousel-inner">
+							  		<div class="carousel-item active">
+							      	<img src="img/cases_260.jpg" class="d-block w-100" alt="..." width="1299" height="658">
+							    	</div>
+							    	<div class="carousel-item">
+							      	<img src="img/cases_261.jpg" class="d-block w-100" alt="..." width="1299" height="658">
+							    	</div>
+							    	<div class="carousel-item">
+							      	<img src="img/cases_262.jpg" class="d-block w-100" alt="..." width="1299" height="658">
+							    	</div>
+							  	</div>
+							  	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+							   	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							    	<span class="visually-hidden">Предыдущий</span>
+							  	</button>
+							  	<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+							    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							    	<span class="visually-hidden">Следующий</span>
+							  	</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="row mt-4">
+						<div class="col-2">
+							<div class="client_website">
+								<h3>CLIENT:</h3>
+								<p>Some Company</p>
+								<h3>WEBSITE:</h3>
+								<a href="#">http://www.somesite.com</a><br>
+								<input type="submit" value="VISIT LIVE SITE" class="visit_button d-md-none d-flex mt-3">
+							</div>	
+						</div>
+						<div class="col-lg-9 offset-lg-1 col-md-8 offset-md-2 col-sm-7 offset-sm-3 col-6 offset-4">
+							<div class="name_about">
+								<h4>Название проекта</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              	</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row mt-xl-4 d-none d-md-flex">
+						<div class="col-xl-2 col-md-3">
 							<input type="submit" value="VISIT LIVE SITE" class="visit_button">
 						</div>
-						<div class="name_about">
-							<h4>Название проекта</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna
-	                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-	                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-						</div>
 					</div>
+					
 					<br>
 				</div>
 			</section>
 
 			<section class="cost">
-				<div class="container_cost">
-					<div class="title">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-8 title">
 						<h2>Расчёт Стоимости</h2>
+						</div>
 					</div>
-					<div class="calcul">
-						<div class="typeofsite calc-menu">
-							<h3>ТИП САЙТА</h3>
-							<select name="site" id="" class="select-menu">
-								<option value="">Интернет-магазин</option>
-								<option value="">Имиджевый сайт</option>
-								<option value="">Персональный сайт</option>
-								<option value="">Портал</option>
-								<option value="">On-line сервис</option>
+
+					<div class="row">
+						<div class="col-6 offset-1">
+							<h3>ТИП САЙТА</h3>	
+						</div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-10 mb-5">
+							<select class="form-select form-select-lg calc-menu" aria-label="Default select example">
+							  <option selected>Кликните, для выбора типа сайта...</option>
+							  <option value="1">Интернет-магазин</option>
+							  <option value="2">Имиджевый сайт</option>
+							  <option value="3">Персональный сайт</option>
+							  <option value="4">Портал</option>
+							  <option value="5">On-line сервис</option>
 							</select>
 						</div>
-						<div class="desiign calc-menu">
-							<h3>ДИЗАЙН</h3>
-							<select name="site" id="" class="select-menu">
-								<option value="">Lorem, ipsum.</option>
-								<option value="">Lorem, mallem.</option>
-								<option value="">Lorem, dollor.</option>
+					</div>
+
+					<div class="row">
+						<div class="col-2 offset-1">
+							<h3>ДИЗАЙН</h3>	
+						</div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-10 mb-5">
+							<select class="form-select form-select-lg calc-menu" aria-label="Default select example">
+							  <option selected>Кликните, для выбора дизайна...</option>
+							  <option value="1">Lorem, ipsum.</option>
+								<option value="2">Lorem, mallem.</option>
+								<option value="3">Lorem, dolor.</option>
+							  <option value="4">Lorem ipsum, dolor.</option>
+							  <option value="5">Lorem ipsum dolor sit.</option>
 							</select>
 						</div>
-						<div class="adapt calc-menu">
-							<h3>АДАПТИВНОСТЬ</h3>
-							<select name="site" id="" class="select-menu select-menu-last">
-								<option value="">Lorem, ipsum.</option>
-								<option value="">Lorem, mallem.</option>
-								<option value="">Lorem, dollor.</option>
+					</div>
+
+					<div class="row" >
+						<div class="col-2 offset-1">
+							<h3>АДАПТИВНОСТЬ</h3>	
+						</div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-10 mb-5">
+							<select class="form-select form-select-lg calc-menu" aria-label="Default select example">
+							  <option selected>Кликните, для выбора адаптивности...</option>
+							  <option value="1">Lorem, ipsum.</option>
+								<option value="2">Lorem, mallem.</option>
+								<option value="3">Lorem, dolor.</option>
+							  <option value="4">Lorem ipsum, dolor.</option>
+							  <option value="5">Lorem ipsum dolor sit.</option>
 							</select>
 						</div>
-						<div class="line"></div>
-						<div class="result">
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-10">
+							<div class="line"></div>
+						</div>
+					</div>
+
+					<div class="row mt-3">
+						<div class="col-3 result offset-1">
 							<h5>Стоимость</h5>
-						   <h5>Сроки</h5>
 						</div>
-						<div class="ans">0<br>0</div>
+						<div class="col-1 offset-6 ans">
+							<p>0</p>
+						</div>
 					</div>
-					<br>
+
+					<div class="row">
+						<div class="col-3 result offset-1">
+							<h5>Сроки</h5>
+						</div>
+						<div class="col-1 offset-6 ans">
+							<p>0</p>
+						</div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-6 col-xl-2 col-sm-4 mt-5">
+							<input type="submit" value="Оставить Заявку" class="cost-button"> 
+						</div>
+					</div>
 				</div>
 			</section>
 
 			<section class="statistic">
-				<div class="title">
-					<h2>Немного статистики</h2>	
+				<div class="container">
+
+					<div class="row justify-content-center">
+						<div class="col-10 block-title pt-5">
+							<h2>Немного статистики</h2>
+						</div>
+					</div>
+					<div class="row justify-content-around mt-5 pt-5">
+						<div class="col-sm-3 d-none d-sm-block">
+							<div class="happy_clients info_block">
+								<h3>120</h3>
+								<p>Счастливых клиентов</p>
+							</div>
+						</div>
+
+						<div class="col-sm-3 d-none d-sm-block">
+							<div class="hours info_block"> 
+								<h3>4600</h3>
+								<p>Часов работы</p>
+							</div>		
+						</div>
+
+						<div class="col-sm-3 d-none d-sm-block">
+							<div class="projects info_block">
+								<h3>340</h3>
+								<p>Проектов завершено</p>
+							</div>
+						</div>
+
+						<div class="col-sm-3 d-none d-sm-block">
+							<div class="awards info_block">
+								<h3>23</h3>
+								<p>Наград получено</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row d-flex d-sm-none justify-content-around">
+						<div class="col-6">
+							<div class="happy_clients info_block">
+								<h3>120</h3>
+								<p>Счастливых клиентов</p>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="hours info_block"> 
+								<h3>4600</h3>
+								<p>Часов работы</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row d-flex d-sm-none justify-content-around">
+						<div class="col-6">
+							<div class="projects info_block">
+								<h3>340</h3>
+								<p>Проектов завершено</p>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="awards info_block">
+								<h3>23</h3>
+								<p>Наград получено</p>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="stat_block">
-					<div class="happy_clients info_block">
-						<h3>120</h3>
-						<p>Счастливых клиентов</p>
-					</div>
-					<div class="hours info_block">
-						<h3>4600</h3>
-						<p>Часов работы</p>
-					</div>		
-					<div class="projects info_block">
-						<h3>340</h3>
-						<p>Проектов завершено</p>
-					</div>
-					<div class="awards info_block">
-						<h3>23</h3>
-						<p>Наград получено</p>
-					</div>
-				</div>
-				<br>
 			</section>
 
 			<section class="comments">
-				<div class="container_comments">
-					<h2 class="title">ОТЗЫВЫ</h2>
-					<div class="img_comments">
-						<img src="img/photo_236.jpg" alt="">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-10 block-title mt-5 pt-5">
+							<h2>ОТЗЫВЫ</h2>		
+						</div>
 					</div>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat suscipit corporis repellendus eligendi asperiores quisquam, harum deserunt maiores magnam neque, unde officiis ipsam optio, fuga, a soluta inventore recusandae. Error.</p>
-					<p><span>Михаил</span>, ген директор ПАО "Газпром"</p>
-					<div class="dot"></div>
+
+					<div class="row justify-content-center">
+						<div class="col-10 mt-5 pt-5" style="text-align: center;">
+							<img src="img/photo_236.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-12 col-lg-10  mt-4" style="text-align: center; color: #5a6371;">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
+ 							facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-10 mt-4">
+							<p><span>Михаил</span>, ген директор ПАО "Газпром"</p>
+						</div>
+					</div>
+					<div class="row justify-content-center mt-5 pt-3">
+						<div class="col-2 col-xl-1  col-md-2 col-sm-3 dot"></div>
+					</div>	
 				</div>
-				<br>
 			</section>
 		</main>
 		<footer>
-			<div class="f_content">
-				<div class="title">
-					<h2>КОНТАКТЫ</h2>	
-				</div>
-				<p class="contacts_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo</p>
-				<div class="contactsbar">
-					<div class="adr adr_item">
-						<p>Санкт-Петербург<br>Невский Проспект 11</p>
-					</div>
-					<div class="email adr_item">
-						<p>info@cpname.com</p>
-					</div>
-					<div class="tel adr_item">
-						<p>+7 999 999-66-66</p>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 block-title mt-5 pt-5">
+						<h2>КОНТАКТЫ</h2>		
 					</div>
 				</div>
-				<div class="message">
-					<h3 class="message_text">ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
-					<input type="text" placeholder="Имя" class="first_input text_input">
-					<input type="text" placeholder="Email" class="text_input"> <br>
-					<textarea name="" id="" rows="5" cols="50" placeholder="Сообщение">
-					</textarea><br>
-					<input type="submit" value="Отправить" class="contacts_button">
+
+				<div class="row justify-content-center mt-5">
+					<div class="col-12 contacts_text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo</p>
+					</div>
+				</div>
+
+				<div class="row justify-content-around mt-5 contacts-block">
+					<div class="col-3" style="text-align: center;">
+						<div class="adr adr_item">
+							<p>Санкт-Петербург<br>Невский Проспект 11</p>
+						</div>
+					</div>
+					<div class="col-3" style="text-align: center;">
+						<div class="email adr_item">
+							<p>info@cpname.com</p>
+						</div>
+					</div>
+					<div class="col-3" style="text-align: center;">
+						<div class="tel adr_item">
+							<p>+7 999 999-66-66</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row justify-content-center mt-4">
+					<div class="col-8" style="text-align: center;">
+						<h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
+					</div>
+				</div>
+
+				<div class="row justify-content-center mt-5">
+					<div class="col-4">
+						<input type="text" placeholder="Имя	" class="first_input text_input">
+					</div>
+					<div class="col-4">
+						<input type="text" placeholder="Email" class="text_input">
+					</div>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-8">
+						<textarea name="" id="" rows="5" cols="50" placeholder="Сообщение">
+						</textarea>
+					</div>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-2">
+						<input type="submit" value="Отправить" class="contacts_button">
+					</div>
 				</div>
 			</div>
+
+
+		
+					
+		
 		</footer>
 		<section class="copyright">
 			<p>Copyright © 2021 Сергей Карпов. Design by Web</p>
