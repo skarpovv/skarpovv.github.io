@@ -27,11 +27,39 @@
 			</div>
 		</header>
 
-		<section class="about">
-
+		<section>
+			<div class="container about">
+				<div class="row pt-5" style="text-align: center" >
+					<h2>Немного Теории:</h2>
+				</div>
+				<div class="row mt-5" style="text-align: center; font-weight: bold;">
+					<h3>1. Гаммирование</h3>
+				</div>
+				<div class="row">
+					<p class="offset-2 col-8 mt-4" style="text-align: center">
+						Гаммирование (смешивание с ключом) основано на побитном сложении
+						по модулю 2 (в соответствии с логикой ИСКЛЮЧАЮЩЕЕ ИЛИ) исходного
+						сообщения с заранее выбранной двоичной последовательностью (ключом).
+						Компактным представлением ключа могут служить числа в десятичной
+						системе счисления или некоторый текст.
+					</p>
+					<p class="offset-2 col-8 mt-3" style="text-align: center">
+						В данном случае рассматриваются внутренние коды символов – таблица ASCII
+					</p>
+					<p class="offset-2 col-8 mt-3" style="text-align: center">
+						Операция суммирования по модулю 2 (ИСКЛЮЧАЮЩЕЕ ИЛИ) является обратимой, так что при сложении с тем же ключом
+						зашифрованного сообщения получается исходный текст (происходит дешифрование). В качестве ключа
+						могут использоваться константы типа  или e. Наибольшую устойчивость к дешифрованию может обеспечить применение ключа с
+						бесконечной длиной, которая образована генератором случайных последовательностей.
+					</p>
+				</div>
+				<div class="pt-5 pb-5">
+					<img class="ExampleImg" src="img/example.png" alt="">
+				</div>
+			</div>
 		</section>
 
-		<section>
+		<section class="alghoritm">
 			<div class="container main">
 				<div class="row pt-5">
 					<div class="offset-2 col-6">
@@ -42,7 +70,7 @@
 						<label for="exampleFormControlInput1" class="form-label">Ключ</label>
 						<input id = "key1" type="text" class="form-control">
 					</div>
-					<div class="col-2 mt-1">
+					<div class="col-2 mt-2">
 						<label for="exampleFormControlInput1" class="form-check"></label>
 						<button type="button" id = "buttoncode" class="btn btn-dark">Start</button>
 					</div>
@@ -57,7 +85,7 @@
 						<label for="exampleFormControlInput1" class="form-label">Key</label>
 						<input id = "key2" type="text" class="form-control">
 					</div>
-					<div class="col-2 mt-1">
+					<div class="col-2 mt-2">
 						<label for="exampleFormControlInput1" class="form-check"></label>
 						<button type="button" id="buttondecode" class="btn btn-dark">Start</button>
 					</div>

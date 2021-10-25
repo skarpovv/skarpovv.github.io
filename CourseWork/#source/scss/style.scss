@@ -13,15 +13,64 @@ header
 	h2, h6
 	{
 		line-height: 90px;
-		color: #035696;	
+		color: #035696;
+		font-weight: bold;
+	}
+	h2
+	{
+		font-size: 30px;
+	}
+	h6
+	{
+		font-size: 18px;
 	}
 
 	background-color: white;
 }
 
+.about
+{
+	background-color: #eee;
+	p
+	{
+		font-size: 18px;
+		font-weight: bold;
+	}
+}
+
+.alghoritm
+{
+	.container
+	{
+
+	}
+	label
+	{
+		font-size: 17px;
+		font-weight: bold;
+	}
+
+}
+
+.ExampleImg
+{
+	display: block;
+	height: 420px;
+	//width: 767px;
+	margin: 0 auto;
+}
+
+
+
 .main
 {
-	height: 1000px;	
+	height: 1000px;
 	width: 100%;
 	background-color: #eee;
+}
+
+.empty
+{
+	border-radius: 7px;
+	box-shadow: 0 0 10px red;
 }

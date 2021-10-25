@@ -16,6 +16,27 @@ function CodeFunction()
     }
     console.log(codestr);
     document.querySelector('#codetext').value = codestr;
+
+    if (text === '') //проверка пустых полей
+    {
+        let t = document.getElementById("simpletext");
+        t.classList.add("empty");
+        setTimeout(function (){
+            t.classList.remove("empty");
+        }, 2000);
+    }
+    if (key === '')
+    {
+        let k = document.getElementById("key1");
+        k.classList.add("empty");
+        setTimeout(function (){
+            k.classList.remove("empty");
+        }, 2000);
+    }
+    if(text === '' || key === '')
+    {
+        return;
+    }
 }
 
 String.fromCharCode("D".charCodeAt()^12)
