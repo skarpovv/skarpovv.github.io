@@ -96,9 +96,85 @@
 						<input id = "ans" type="text" class="form-control">
 					</div>
 				</div>
-			</div>
 
-		</section>
+			</div>
+			<section class="rsa">
+				<div class="container about about-rsa">
+					<div class="row mt-2 pt-5" style="text-align: center; font-weight: bold;">
+						<h3 class="pt-5">2. Алгоритм RSA</h3>
+					</div>
+					<div class="row">
+						<p class="offset-2 col-8 mt-4" style="text-align: center">
+							RSA относится к асимметричным шифрам.
+							В асимметричных шифрах используются два ключа – открытый и закрытый, которые создаются получателем сообщения.
+							Открытые ключи доступны всем желающим и передаются по незащищённому каналу связи.
+							Отправляемое сообщение шифруется открытым ключом получателя.
+							Дешифрируется сообщение при его получении закрытым ключом получателя.
+							Обратим внимание, что дешифрировать сообщение не может даже отправитель, что и не требуется.
+							Открытый и закрытый ключи математически связаны друг с другом таким образом, что сообщение,
+							зашифрованное одним ключом из пары, можно дешифрировать только вторым ключом из этой же пары ключей.
+						</p>
+						<p class="offset-2 col-8 mt-3" style="text-align: center">
+							Разобьём процесс шифрования на 3 этапа:
+						</p>
+						<p class="offset-2 col-8 mt-3" >1) Создание публичного ключа</p>
+						<p class="offset-2 col-8 mt-3" >2) Создание приватоно ключа</p>
+						<p class="offset-2 col-8 mt-3" >3) Шифрование по открытому ключу</p>
+
+						<div class="line offset-1 mt-5 col-10"></div>
+
+						<p class="offset-3 mt-5 col-6" style="text-align: center">
+							Создание открытого ключа начинается с выбора двух любых простых числел <span class="pq">p</span> и <span class="pq">q</span>, чтобы получить число <span class="pq">n</span>
+							<img src="img/n.png" alt="" style="width: 500px">
+
+						</p>
+						<p class="offset-1 mt-2 col-10 pq" style="text-align: center">
+							2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199…
+						</p>
+						<p class="offset-1 mt-2 col-10" style="text-align: center">
+							Далее вычисляется функция Эйлера <br>
+							<img src="img/phi.png" alt="" style="width: 600px"> <br>
+							Следующий шаг - вычисление числа <span class="pq">e</span>
+							Данное число должно быть выбрано по опреденённым критериям: <br> 1) Число должно быть простым.
+							<br> 2) Число должно быть больше единицы, но меньше &#966. <br>
+							1 < <span class="pq">e</span> < &#966(<span class="pq">n</span>) <br>
+							3) Число должно быть взаимно простым с &#966(<span class="pq">n</span>) <br>
+							<br>
+							После данных вычислений, мы получаем открытый ключ, в ввиде пары чисел: <br> <span style="font-weight: bold; font-family: Consolas; font-size: 36px;">{e,n}</span>
+
+							<br> <br>
+							Теперь нам не хватает всего одного числа <span class="pq">d</span> для формирования закрытого (приватного) ключа.
+							<br> Его находят из следующего выражения: <br>
+							<img src="img/d.png" alt="" style="width: 600px">
+							<br>
+							Таким образом, мы получаем пару чисел, представляющих закрытый ключ <br>
+							<br> <span style="font-weight: bold; font-family: Consolas; font-size: 36px;">{d,n}</span>
+						</p>
+
+						<div class="line offset-1 mt-5 col-10"></div>
+
+						<div class="row mt-5 " style="text-align: center">
+							<p class="col-5 offset-1">Шифрование</p>
+							<p class="col-5">Дешифровка</p>
+						</div>
+						<div class="row" style="text-align: center">
+							<div class="col-5 offset-1">
+								<img src="img/encrypt.png" alt="" style="width: 500px">
+							</div>
+							<div class="col-5">
+								<img src="img/decrypt.png" alt="" style="width: 500px">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container rsa-alg">
+					
+				</div>
+			</section>
+
+
+		<script src = "js/jquery-3.6.0.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 

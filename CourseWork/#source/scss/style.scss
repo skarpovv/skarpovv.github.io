@@ -64,7 +64,7 @@ header
 
 .main
 {
-	height: 1000px;
+	height: 500px;
 	width: 100%;
 	background-color: #eee;
 }
@@ -73,4 +73,26 @@ header
 {
 	border-radius: 7px;
 	box-shadow: 0 0 10px red;
+}
+
+.about-rsa{
+	height: 2500px;
+}
+
+.line
+{
+	height: 2px;
+	background-color: #888;
+}
+
+.pq
+{
+	font-family: Consolas;
+	font-weight: bold;
+}
+
+.rsa-alg{
+	height: 500px;
+	width: 100%;
+	background-color: #eee;
 }

@@ -10,9 +10,10 @@ function CodeFunction()
     document.querySelector('#key2').value = key;
 
     let codestr = '';
+    key = key.repeat(Math.ceil(text.length/key.length));
     for (let i = 0; i < text.length; i++)
     {
-        codestr += String.fromCharCode((text[i].charCodeAt())^Number(key));
+        codestr += String.fromCharCode((text[i].charCodeAt())^Number(key[i]));
     }
     console.log(codestr);
     document.querySelector('#codetext').value = codestr;
@@ -39,16 +40,16 @@ function CodeFunction()
     }
 }
 
-String.fromCharCode("D".charCodeAt()^12)
-
 function DecodeFunction()
 {
     let text = document.querySelector('#codetext').value;
     let key = document.querySelector('#key2').value;
     let decode = '';
+    key = key.repeat(Math.ceil(text.length/key.length));
     for (let i = 0; i < text.length; i++)
     {
-        decode += String.fromCharCode((text[i].charCodeAt())^Number(key));
+        decode += String.fromCharCode((text[i].charCodeAt())^Number(key[i]));
     }
     document.querySelector('#ans').value = decode;
 }
+
