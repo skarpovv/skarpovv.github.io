@@ -165,17 +165,92 @@
 								<img src="img/decrypt.png" alt="" style="width: 500px">
 							</div>
 						</div>
+						<div class="line offset-1 mt-5 col-10"></div>
+						<div class="row">
+							<p class="offset-2 col-8 mt-5" style="text-align: center; font-family: Consolas;">
+								2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167
+							</p>
+						</div>
+
 					</div>
 				</div>
 
 				<div class="container rsa-alg">
-					
+					<div class="row">
+						<div class="col-1 offset-2" style="text-align: right; font-size: 26px;">
+							<span class="pq">p</span>
+						</div>
+						<div class="col-2">
+							<input id = "p" type="text" class="form-control">
+						</div>
+
+						<div class="col-1 offset-1" style="text-align: right; font-size: 26px;">
+							<span class="pq">q</span>
+						</div>
+						<div class="col-2">
+							<input id = "q" type="text" class="form-control">
+						</div>
+					</div>
+
+					<div class="row mt-4" style="font-size: 22px;">
+						<div class="col-2 offset-2">
+							<span class="pq">p</span> = <span class="p pq"></span>
+						</div>
+						<div class="col-2">
+							<span class="pq">q</span> = <span class="q pq"></span>
+						</div>
+						<div class="col-2">
+							<span class="pq">n</span> = <span class="n pq"></span>
+						</div>
+						<div class="col-2">
+							<span class="pq">e</span> = <span class="e pq"></span>
+						</div>
+						<div class="col-2">
+							<span class="pq">d</span> = <span class="d pq"></span>
+						</div>
+					</div>
+					<div class="row">
+						<p class="col-4 offset-4 mt-5" style="font-size: 28px; text-align: center; font-family: Consolas;">
+							Public key: {<span id="epub"></span>,<span id="npub"></span>}<br>
+							Private key: {<span id="dpriv"></span>,<span id="npriv"></span>}
+						</p>
+					</div>
+					<div class="row">
+						<div class="col-12" style="text-align: center">
+							<button type="button" id="ppkeys" class="btn btn-dark">Generate keys</button>
+						</div>
+					</div>
+
+					<div class="row mt-5 pt-5">
+						<div class="col-4 offset-3">
+							<label for="exampleFormControlInput1" class="form-label">Введите строку, которую нужно зашифровать</label>
+							<input id = "stext" type="text" class="form-control">
+						</div>
+						<div class="col-1 pt-3 mt-3">
+							<button type="button" id="enc" class="btn btn-dark">Encrypt</button>
+						</div>
+						<div class="col-2 pt-3 mt-3">
+							<button type="button" id="dec" class="btn btn-dark">Decrypt</button>
+						</div>
+					</div>
+					<div class="row mt-5 "style="font-size: 20px; font-weight: bold;">
+						<div class="col-4 offset-3" >
+							Зашифрованная строка:  <span id="shtext" class=""></span>
+						</div>
+					</div>
+					<div class="row mt-5 "style="font-size: 20px; font-weight: bold;">
+						<div class="col-4 offset-3" >
+							Расшифрованная строка:  <span id="dshtext" class=""></span>
+						</div>
+					</div>
+
 				</div>
 			</section>
 
 
 		<script src = "js/jquery-3.6.0.min.js"></script>
-		<script src="js/script.js"></script>
+			<script src="js/bignumber.mjs" type="module"></script>
+		<script src="js/script.js" type="module"></script>
 	</body>
 
 </html>
