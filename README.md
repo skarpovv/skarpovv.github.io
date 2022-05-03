@@ -1,2 +1,3 @@
-# Карпов Сергей
-Мой первый сайт
+# Carpov Serghei
+### React/Redux dev
+
